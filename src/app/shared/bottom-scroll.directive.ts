@@ -31,7 +31,7 @@ export class BottomScrollDirective implements OnInit {
   checkScrollAndEmit(): void {
     if (
       !this.isLoading &&
-      window.innerHeight + window.scrollY >= document.body.offsetHeight
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
     ) {
       this.scrolledToEnd.emit();
     }
