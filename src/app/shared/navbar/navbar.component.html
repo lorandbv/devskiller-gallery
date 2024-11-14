@@ -1,0 +1,18 @@
+<mat-toolbar class="navbar">
+  <div class="navbar-buttons">
+    <a
+      mat-button
+      routerLink="/photos"
+      [class.active]="
+        activeRoute === Pages.GALLERY || activeRoute === Pages.DETAIL_VIEW
+      "
+      >Photos</a
+    >
+    <a
+      mat-button
+      routerLink="/favorites"
+      [class.active]="activeRoute === Pages.FAVORITES"
+      >Favorites</a
+    >
+  </div>
+</mat-toolbar>

@@ -1,0 +1,11 @@
+@import "/src/app/shared/variables.scss";
+
+p {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: $primary;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 5px;
+}

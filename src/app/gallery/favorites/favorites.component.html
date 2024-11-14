@@ -1,0 +1,14 @@
+<div class="gallery">
+  <div class="image-container" *ngFor="let photo of favorites">
+    <img
+      [src]="photo?.url"
+      [alt]="photo?.id"
+      [routerLink]="'/photos/' + photo?.id"
+    />
+  </div>
+</div>
+
+<app-no-data
+  [text]="'You have no favorite images.'"
+  *ngIf="!favorites.length"
+></app-no-data>

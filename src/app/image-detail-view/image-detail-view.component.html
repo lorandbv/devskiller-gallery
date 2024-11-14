@@ -1,0 +1,7 @@
+<div class="image-container">
+  <img [src]="photo.url" [alt]="photo.id" />
+  <button mat-fab extended (click)="removeFromFavorites(photo)">
+    <mat-icon>delete</mat-icon>
+    Remove from favorites
+  </button>
+</div>
